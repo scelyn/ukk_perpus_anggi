@@ -8,31 +8,23 @@ $url = new Url();
 function checkIsNotLogin()
 {
 	if (!isset($_SESSION['login'])) {
-<<<<<<< HEAD
+
 		header("Location:http://localhost/ukk_perpus_anggi/login");
-=======
-		header("Location:http://localhost/ukk_perpus_suciyulis/login");
->>>>>>> 7b611937058c549a1a37b41b43283172b89df7f3
 	}
 }
 
 function urlTo($to)
 {
-<<<<<<< HEAD
+
 	return 'http://localhost/ukk_perpus_anggi'.$to;
-=======
-	return 'http://localhost/ukk_perpus_suciyulis'.$to;
->>>>>>> 7b611937058c549a1a37b41b43283172b89df7f3
 }
 
 function redirectTo($icon, $pesan, $tujuan)
 {
 	setcookie('alert', serialize([$icon, $pesan]), time() + 1, '/');
-<<<<<<< HEAD
+
 	header("Location:http://localhost/ukk_perpus_anggi".$tujuan);
-=======
-	header("Location:http://localhost/ukk_perpus_suciyulis".$tujuan);
->>>>>>> 7b611937058c549a1a37b41b43283172b89df7f3
+
 }
 
 function getTitle()
